@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
             {
                 if (el.novina != "")
                 {
-                    var item2 = new ListViewItem(new[] { el.time.ToLongTimeString(), el.novina });
+                    var item2 = new ListViewItem(new[] { el.time.ToLongTimeString()+el.time.ToShortDateString(), el.novina });
                     listView1.Items.Add(item2);
                 }
             }
